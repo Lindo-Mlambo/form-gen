@@ -25,3 +25,5 @@ Send form data to your specified url or something
 - Twitter - [@Lamboughs](https://www.twitter.com/Lamboughs)
 
 ## Helpful sources
+
+- W3Schools - [HTML Drag and Drop API](https://www.w3schools.com/html/html5_draganddrop.asp)

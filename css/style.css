@@ -1,10 +1,87 @@
+:root {
+  --sidebar-min-width: 250px;
+}
 *, *:before, *:after {
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4 {
+  margin: 1em 0;
+}
+strong {
+  font-weight: 100;
 }
 
 body {
   font-size: 1em;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   font-family: Roboto, 'sans-serif';
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+}
+
+main > div {
+  display: flex;
+  padding: 1em;
+}
+
+main > div:not(:nth-child(2)) {
+  min-width: var(--sidebar-min-width);
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.components {
+  flex-direction: column;
+}
+.component-list {
+  display: flex;
+  flex-direction: column;
+}
+.input-type-option {
+  padding: .5em 1em;
+  border: 1px solid #ccc;
+  margin: .5em 0;
+  border-radius: .25em;
+  transition: background-color .4s ease;
+}
+
+.input-type-option:hover {
+  background-color: #ddd;
+}
+
+.form-ui {
+  min-width: calc(100vw - 2*var(--sidebar-min-width));
+  resize: horizontal;
+  transition: box-shadow .5s ease;
+  z-index: 1;
+}
+
+.component-tools {
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.input-group > label {
+  font-weight: 600;
+  font-size: .8em;
+  margin-bottom: .2em;
+}
+.input-group input {
+  height: 30px;
+  border-radius: .2em;
+  border: 1px solid #f4f4f4;
+}
+
+.drag-enter {
+  box-shadow: 0px 0px 24px 2px rgba(0, 0, 0, .1);
 }

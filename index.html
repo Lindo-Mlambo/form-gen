@@ -12,13 +12,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/Input.js" defer></script>
+    <script src="js/utils.js" defer></script>
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <main>
-      <div class="elements"></div>
-      <div class="form-ui">initial commit</div>
-      <div class="customization"></div>
+      <div class="components sidebar">
+        <h2>Components</h2>
+        <div class="component-list">
+          <section>
+            <div
+              class="input-type-option text"
+              data-input-type="alphanumeric"
+              draggable="true"
+            >
+              Alphanumeric
+            </div>
+            <div
+              class="input-type-option text"
+              data-input-type="dropdown"
+              draggable="true"
+            >
+              Dropdownk
+            </div>
+            <div
+              class="input-type-option radio"
+              data-input-type="radio"
+              draggable="true"
+            >
+              Radio
+            </div>
+            <div
+              class="input-type-option checkbox"
+              data-input-type="checkbox"
+              draggable="true"
+            >
+              Checkbox
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="form-ui"></div>
+      <div class="component-tools sidebar">
+        <h2>Component Tools</h2>
+      </div>
     </main>
   </body>
 </html>
